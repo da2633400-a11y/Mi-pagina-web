@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Flores Amarillas 🌼</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Poppins',sans-serif;
+  background:linear-gradient(135deg,#fff8e1,#ffe082,#ffd54f);
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:40px 15px;
+}
+
+/* TARJETA PRINCIPAL */
+.card{
+  background:#ffffff;
+  max-width:950px;
+  width:100%;
+  border-radius:30px;
+  padding:50px 40px;
+  box-shadow:0 20px 60px rgba(0,0,0,0.15);
+  position:relative;
+  overflow:hidden;
+}
+
+/* MARCO DECORATIVO SUPERIOR */
+.card::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:12px;
+  background:linear-gradient(90deg,#fbc02d,#fdd835,#ffeb3b,#fbc02d);
+}
+
+/* SECCIÓN SUPERIOR */
+.top-section{
+  text-align:center;
+  margin-bottom:40px;
+}
+
+.mini-text{
+  font-size:0.95em;
+  color:#6d4c41;
+  margin-bottom:18px;
+  letter-spacing:1px;
+}
+
+.music-btn{
+  background:linear-gradient(135deg,#f9a825,#ffca28);
+  border:none;
+  border-radius:50px;
+  padding:18px 50px;
+  cursor:pointer;
+  display:inline-flex;
+  flex-direction:column;
+  align-items:center;
+  transition:0.3s;
+  box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+.music-btn:hover{
+  transform:translateY(-4px);
+  box-shadow:0 12px 30px rgba(0,0,0,0.25);
+}
+
+.btn-main{
+  font-family:'Great Vibes',cursive;
+  font-size:2.4em;
+  color:#5d4037;
+}
+
+.btn-sub{
+  font-size:0.9em;
+  color:#5d4037;
+}
+
+/* GIRASOLES */
+.sunflower{
+  position:fixed;
+  font-size:30px;
+  animation:fall linear forwards;
+}
+
+@keyframes fall{
+  from{transform:translateY(-60px) rotate(0deg);}
+  to{transform:translateY(110vh) rotate(360deg);}
+}
+
+/* FOTOS */
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:18px;
+  margin-bottom:40px;
+}
+
+.photo{
+  background:#fffde7;
+  padding:10px;
+  border-radius:18px;
+  text-align:center;
+  box-shadow:0 5px 15px rgba(0,0,0,0.08);
+  border:2px solid #fbc02d;
+}
+
+.photo img{
+  width:100%;
+  height:150px;
+  object-fit:cover;
+  border-radius:12px;
+  margin-bottom:6px;
+}
+
+.photo.large img{
+  height:220px;
+}
+
+.photo span{
+  font-size:0.85em;
+  color:#6d4c41;
+}
+
+/* TITULO */
+h1{
+  text-align:center;
+  font-family:'Great Vibes',cursive;
+  font-size:4em;
+  color:#6d4c41;
+  margin-bottom:35px;
+}
+
+/* TEXTO */
+.parrafo{
+  margin-bottom:25px;
+  line-height:1.9;
+  font-size:1.05em;
+  color:#4e342e;
+}
+
+.mark{
+  background:#fff59d;
+  padding:2px 4px;
+  border-radius:4px;
+}
+
+.signature{
+  text-align:center;
+  margin-top:35px;
+  font-family:'Great Vibes',cursive;
+  font-size:3em;
+  color:#5d4037;
+}
+
+.final-note{
+  margin-top:40px;
+  padding:20px;
+  background:#fffde7;
+  border-radius:15px;
+  border:1px dashed #fbc02d;
+  text-align:center;
+  font-size:0.9em;
+}
+</style>
+</head>
+
+<body>
+
+<audio id="audio" loop>
+  <source src="Ximenita.mp3" type="audio/mpeg">
+</audio>
+
+<div class="card">
+
+<div class="top-section">
+  <div class="mini-text">
+    Espero que estés bien 🌼<br>
+    Te deseo lo mejor siempre ✨
+  </div>
+
+  <button class="music-btn" onclick="playMusic()">
+    <div class="btn-main">Gracias por existir 🌻</div>
+    <div class="btn-sub">🎵 Toca aquí para la música 🎵</div>
+  </button>
+</div>
+
+<div class="gallery">
+
+  <div class="photo">
+    <img src="SNOOPY.jpeg">
+    <span>Snoopy 🐶🐾✨ (21-03-2026)</span>
+  </div>
+
+  <div class="photo">
+    <img src="DETALLE.jpeg">
+    <span>Un detalle 🎁🌼💛 (21-03-2026)</span>
+  </div>
+
+  <div class="photo">
+    <img src="IMG_2514.jpeg">
+    <span>Para ti ❤️🌹✨ (12-02-2026)</span>
+  </div>
+
+  <div class="photo large">
+    <img src="IMG_2512.jpeg">
+    <span>¡Mira, subí a 15,000 copas por ti! ❤️🎮 (26-11-2025)</span>
+  </div>
+
+  <div class="photo large">
+    <img src="IMG_2513.jpeg">
+    <span>Iba a ganar por ti, pero se puso difícil ❤️🥺 (25-10-2025)</span>
+  </div>
+
+  <div class="photo">
+    <img src="IMG_2511.jpeg">
+    <span>¡Mira, gané por ti! 🏆✨ (01-01-2025)</span>
+  </div>
+
+</div>
+
+<h1>Ximena</h1>
+
+<div class="parrafo">
+Hola, hoy <span class="mark">21 de marzo</span> quería tener el detalle de darte <span class="mark">flores amarillas</span> 🌼💐😊🌻. 
+Dijiste que no recibías mucho este tipo de regalos 🎁🎉 y que te habías alegrado porque te gustó 😄👍. 
+Te quería volver a regalar flores 🌺🌼 y un peluche 🐻🐰.
+</div>
+
+<div class="parrafo">
+Habías dicho que te había hecho sentir especial el haber recibido algo que no recibes mucho 💕❤️. 
+Y la verdad, a mí me hace sentir bien poderte dar algo sabiendo que estás bien o que te gusta, 
+<span class="mark">sin tener que recibir nada a cambio</span> 😊. 
+El hecho de poderte escribir 📱💬 es suficiente para mí 🤗👋. Espero y te guste 👍.
+</div>
+
+<div class="parrafo">
+Te las 💐 doy algo temprano ☀️ porque, pues, es algo obvio ✨ que <span class="mark">tu novio te tiene que dar unas igual</span> 🎁 
+y no quiero incomodar ❤️.
+</div>
+
+<div class="signature">
+Con cariño,<br>
+Daniel 🤍
+</div>
+
+<div class="final-note">
+<span class="mark">No lo hago con la intención de hacerte sentir mal</span> 😔🤍.  
+<span class="mark">No pido nada a cambio</span>, solo quiero <span class="mark">tener un detalle contigo</span> 🤍✨.
+</div>
+
+</div>
+
+<script>
+function playMusic(){
+  document.getElementById("audio").play();
+  for(let i=0;i<20;i++){
+    let flower=document.createElement("div");
+    flower.className="sunflower";
+    flower.innerHTML="🌻";
+    flower.style.left=Math.random()*100+"vw";
+    flower.style.animationDuration=(3+Math.random()*3)+"s";
+    document.body.appendChild(flower);
+    setTimeout(()=>flower.remove(),6000);
+  }
+}
+</script>
+
+</body>
+</html>
