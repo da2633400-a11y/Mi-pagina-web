@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Para Ximena 🌼</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<link href="https://fonts.cdnfonts.com/css/minecraft-4" rel="stylesheet">
+
+<style>
+/* Forzado de carga de fuente */
+@font-face {
+    font-family: 'Minecraftia';
+    src: url('https://db.onlinewebfonts.com/t/623c2116040e698184568608f5104d9c.woff2') format('woff2');
+}
+
+* { 
+    margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'Minecraft', 'Minecraftia', sans-serif !important;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px 15px 50px 15px;
+    overflow-x: hidden;
+    /* FONDO DE PAISAJE MINECRAFT GARANTIZADO */
+    background: url('https://images.alphacoders.com/133/1333464.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Capa de oscurecimiento para que el paisaje se vea pero deje leer el texto */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.15); /* Sombra suave sobre el paisaje */
+    z-index: -1;
+}
+
+.card {
+    background: rgba(198, 198, 198, 0.9); /* Gris Minecraft con transparencia */
+    border: 5px solid #000;
+    outline: 5px solid #fff;
+    outline-offset: -10px;
+    border-radius: 25px;
+    max-width: 650px;
+    width: 100%;
+    padding: 50px 25px;
+    position: relative;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+/* BOTÓN DE MÚSICA */
+.music-btn {
+    background: #3c8527;
+    border: 4px solid #000;
+    border-top-color: #55ff55;
+    border-left-color: #55ff55;
+    border-radius: 15px;
+    padding: 22px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 450px;
+    margin-bottom: 40px;
+    transition: transform 0.1s;
+}
+.music-btn:active { transform: translateY(4px); }
+
+.btn-main { font-size: 2.1em; color: #fff; text-shadow: 3px 3px #000; display: block; }
+.btn-sub { font-size: 1em; color: #ffff55; display: block; margin-top: 5px; text-shadow: 1px 1px #000; }
+
+/* GALERÍA MODERNA */
+.gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+.photo {
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 25px;
+    padding: 15px;
+    border: 2px solid #373737;
+}
+.photo img { 
+    width: 100%; 
+    border-radius: 20px; 
+    border: 3px solid #000;
+    margin-bottom: 12px;
+}
+.photo span { font-size: 1.2em; color: #111; display: block; }
+
+/* TEXTOS */
+h1 { font-size: 5em; color: #ffff55; text-shadow: 5px 5px #3f3f00; margin-bottom: 30px; }
+
+.parrafo {
+    font-size: 1.5em;
+    line-height: 1.5;
+    color: #111;
+    background: rgba(255,255,255,0.45);
+    padding: 22px;
+    margin-bottom: 25px;
+    border-radius: 20px;
+    text-align: left;
+    border-left: 10px solid #3c8527;
+}
+
+/* FIRMA ENCANTADA */
+.signature {
+    font-size: 4.2em;
+    margin: 40px 0;
+    color: #ff77ff;
+    text-shadow: 0 0 15px rgba(255,119,255,0.8), 4px 4px 0px #4a004a;
+    background: linear-gradient(90deg, #ff77ff, #ffffff, #ff77ff);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: enchant 3s linear infinite;
+}
+
+@keyframes enchant {
+    to { background-position: 200% center; }
+}
+
+.final-note {
+    background: rgba(0,0,0,0.05);
+    color: #444;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px dashed #3c8527;
+}
+</style>
+</head>
+
+<body>
+
+<audio id="audio" loop>
+    <source src="Ximenita.mp3" type="audio/mpeg">
+</audio>
+
+<div class="card">
+    <div class="btn-container">
+        <button class="music-btn" onclick="document.getElementById('audio').play()">
+            <span class="btn-main">Gracias por existir 🌻</span>
+            <span class="btn-sub">♫ (Clic para música de fondo) ♫</span>
+        </button>
+    </div>
+
+    <div class="gallery">
+        <div class="photo">
+            <img src="SNOOPY.jpeg">
+            <span>Snoopy 🐶🐾✨ (21-03-2026)</span>
+        </div>
+        <div class="photo">
+            <img src="DETALLE.jpeg">
+            <span>Un detalle 🎁🌼💛 (21-03-2026)</span>
+        </div>
+        <div class="photo">
+            <img src="IMG_2514.jpeg">
+            <span>Para ti ❤️🌹✨ (12-02-2026)</span>
+        </div>
+        <div class="photo">
+            <img src="IMG_2512.jpeg">
+            <span>¡Mira, subí a 15,000 copas por ti! ❤️ (26-11-2025)</span>
+        </div>
+        <div class="photo">
+            <img src="IMG_2513.jpeg">
+            <span>Iba a ganar por ti, pero se puso difícil ❤️🥺 (25-10-2025)</span>
+        </div>
+        <div class="photo">
+            <img src="IMG_2511.jpeg">
+            <span>¡Mira, gané por ti! 🏆✨ (01-01-2025)</span>
+        </div>
+    </div>
+
+    <h1>Ximena</h1>
+
+    <div class="parrafo">
+        Hola, hoy <span style="color:#008000; font-weight:bold;">21 de marzo</span> quería tener el detalle de darte <span style="color:#b3a200; font-weight:bold;">flores amarillas</span> 🌼💐😊🌻. 
+        Dijiste que no recibías mucho este tipo de regalos.🎁🎉 😄👍. Te quería volver a regalar flores 🌺🌼 y un peluche 🐻🐰.
+    </div>
+
+    <div class="parrafo">
+        Habías dicho que te había hecho sentir especial el haber recibido algo que no recibes mucho 💕❤️. 
+        Y la verdad, a mí me hace sentir bien poderte dar algo sabiendo que te hace sentir bien o que te gusta, 
+        sin tener que recibir nada a cambio 😊. El hecho de poderte escribir 📱💬 es suficiente para mí 🤗👋. Espero y te guste 👍.
+    </div>
+
+    <div class="parrafo">
+        Te las 💐 doy algo temprano ☀️ porque, pues, es algo obvio ✨ que tu novio te tiene que dar unas igual 🎁 
+        y no quiero incomodar❤️.
+    </div>
+
+    <div class="signature">
+        Con mucho cariño,<br>
+        Daniel 🤍
+    </div>
+
+    <div class="final-note">
+        No lo hago con la intención de hacerte sentir mal 😔🤍.<br><br>
+        No pido nada a cambio, solo quiero tener un detalle contigo 🤍✨.
+    </div>
+</div>
+
+</body>
+</html>
