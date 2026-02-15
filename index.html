@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Inventario - Ximena 🌼</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.cdnfonts.com/css/minecraft-4" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Minecraft',sans-serif !important;
+image-rendering:pixelated;
+}
+
+body{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:url('https://images.alphacoders.com/132/1327310.png') no-repeat center center fixed;
+background-size:cover;
+}
+
+.overlay{
+background:rgba(0,0,0,0.55);
+position:fixed;
+width:100%;
+height:100%;
+z-index:0;
+}
+
+.inventory{
+position:relative;
+z-index:2;
+background:#c6c6c6;
+border:6px solid #000;
+box-shadow: inset -6px -6px #555, inset 6px 6px #fff;
+width:95%;
+max-width:900px;
+padding:20px;
+}
+
+.title{
+color:#ffff55;
+font-size:3em;
+text-shadow:4px 4px #3f3f00;
+margin-bottom:15px;
+text-align:center;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(9,1fr);
+gap:6px;
+margin-bottom:20px;
+}
+
+.slot{
+background:#8b8b8b;
+border:3px solid #000;
+box-shadow: inset -3px -3px #555, inset 3px 3px #dbdbdb;
+aspect-ratio:1/1;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:22px;
+position:relative;
+cursor:pointer;
+}
+
+.slot img{
+width:80%;
+}
+
+.tooltip{
+position:absolute;
+bottom:110%;
+left:50%;
+transform:translateX(-50%);
+background:#111;
+color:#55ff55;
+padding:6px 10px;
+border:2px solid #55ff55;
+font-size:14px;
+display:none;
+white-space:nowrap;
+}
+
+.slot:hover .tooltip{
+display:block;
+}
+
+.message-box{
+background:#111;
+border:4px solid #55ff55;
+padding:25px;
+color:#fff;
+margin-top:20px;
+line-height:1.6;
+}
+
+.yellow{color:#ffff55;}
+.pink{color:#ff77ff;}
+
+.signature{
+text-align:center;
+font-size:2em;
+color:#ff77ff;
+margin-top:25px;
+}
+
+.music-btn{
+background:#3c8527;
+border:4px solid #000;
+border-top-color:#55ff55;
+border-left-color:#55ff55;
+padding:15px;
+color:#fff;
+cursor:pointer;
+width:100%;
+margin-bottom:20px;
+}
+
+.music-btn:hover{
+background:#4caf50;
+}
+</style>
+</head>
+<body>
+
+<div class="overlay"></div>
+
+<audio id="audio" loop>
+<source src="Ximenita.mp3" type="audio/mpeg">
+</audio>
+
+<div class="inventory">
+
+<div class="title">Inventario de Daniel 💎</div>
+
+<button class="music-btn" onclick="document.getElementById('audio').play()">
+Gracias por existir 🌻
+</button>
+
+<div class="grid">
+
+<div class="slot">
+🌼
+<div class="tooltip">Flores amarillas</div>
+</div>
+
+<div class="slot">
+💎
+<div class="tooltip">Diamante raro</div>
+</div>
+
+<div class="slot">
+🧸
+<div class="tooltip">Peluche especial</div>
+</div>
+
+<div class="slot">
+📜
+<div class="tooltip">Carta guardada</div>
+</div>
+
+<div class="slot">
+<img src="SNOOPY.jpeg">
+<div class="tooltip">Snoopy 🐶🐾✨</div>
+</div>
+
+<div class="slot">
+<img src="DETALLE.jpeg">
+<div class="tooltip">Un detalle 🎁🌼💛</div>
+</div>
+
+<div class="slot">
+<img src="IMG_2514.jpeg">
+<div class="tooltip">Para ti ❤️🌹✨</div>
+</div>
+
+</div>
+
+<div class="message-box">
+Hola, hoy <span class="yellow">21 de marzo</span> quería tener el detalle de darte <span class="pink">flores amarillas</span> 🌼💐😊🌻. Dijiste que no recibías mucho este tipo de regalos.🎁🎉 😄👍. <span class="yellow">Te quería volver a regalar flores</span> 🌺🌼 y un peluche 🐻🐰. Habías dicho que te había hecho <span class="pink">sentir especial</span> el haber recibido algo que no recibes mucho 💕❤️. Y la verdad, a mí me hace sentir bien poderte dar algo sabiendo que te hace sentir bien o que te gusta, sin tener que recibir nada a cambio 😊. El hecho de <span class="yellow">poderte escribir</span> 📱💬 es suficiente para mi 🤗👋. Espero y te guste 👍.
+<br><br>
+Te las 💐 doy algo temprano ☀️ porque, pues, es algo obvio ✨ que <span class="yellow">tu novio te tiene que dar unas igual</span> 🎁 y no quiero incomodar❤️.
+</div>
+
+<div class="signature">
+Con mucho cariño,<br>
+Daniel 🤍
+</div>
+
+</div>
+
+</body>
+</html>
